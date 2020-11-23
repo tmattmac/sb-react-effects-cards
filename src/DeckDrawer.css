@@ -1,0 +1,16 @@
+.DeckDrawer {
+    position: relative;
+    counter-reset: card;
+}
+
+.DeckDrawer button {
+    display: block;
+    margin: 0.5em auto;
+}
+
+.DeckDrawer img {
+    position: absolute;
+    counter-increment: card;
+    left: counter(card);
+    z-index: counter(card);
+}
